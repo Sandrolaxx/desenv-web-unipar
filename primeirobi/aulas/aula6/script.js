@@ -2,6 +2,8 @@ const divUm = document.querySelector(".container");
 
 divUm.firstElementChild.textContent = "Alterado via JS!";
 
+document.getElement
+
 // divUm.firstElementChild.style = "color: red";
 
 function ativar() {
