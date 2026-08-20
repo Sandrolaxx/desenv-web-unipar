@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Registre-se</legend>
+        <h3>Informe seus dados para realizar o cadastro na plataforma.</h3>
+        <form action="http://localhost:8081/register" method="post">
+
+            <label for="nome">Informe seu Nome</label>
+            <input type="text" id="nome" name="nome" 
+                title="Informe o seu nome completo"
+                pattern="[A-Za-z ]+"
+                placeholder="Nome" required>
+            <br>
+
+            <label for="email">Informe seu E-mail</label>
+            <input type="email" id="email" name="email" 
+                placeholder="E-mail" required>
+
+            <br>
+
+            <label for="senha">Informe sua Senha</label>
+            <input type="password" id="senha" minlength="6"
+                name="senha" placeholder="Senha" required>
+
+            <br>
+            <label for="bio">Insira sua biografia</label>
+            <br>
+            <textarea name="bio" id="bio" 
+                rows="6" cols="26" style="resize: none;"
+                placeholder="Insira..." />
+            </textarea>
+            <br>
+
+            <label for="time">Selecione o melhor time do BR</label>
+            <br>
+            <select name="melhor-time" id="time">
+                <option value="" selected disabled >Selecione</option>
+                <optgroup label="Time Séria A (Que nunca caiu)">
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Flamengo">Flamengo</option>
+                    <option value="Flamengo">Flamengo</option>
+                </optgroup>
+                <optgroup label="Time Série D">
+                    <option value="Cascavel">Cascavel</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+
+</html>
